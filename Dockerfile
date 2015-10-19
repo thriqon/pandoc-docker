@@ -11,7 +11,7 @@ RUN cabal install highlighting-kate
 RUN cabal install aeson
 RUN cabal install deepseq-generics
 
-RUN cabal install -v 3 pandoc-types
+RUN cabal install -v3 pandoc-types
 RUN cabal install pandoc
 RUN cabal install pandoc-citeproc
 RUN cabal install pandoc-crossref
