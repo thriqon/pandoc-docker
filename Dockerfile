@@ -8,6 +8,9 @@ RUN pacman -S --quiet --noconfirm graphviz ttf-dejavu fontconfig
 RUN cabal update
 RUN cabal install tls
 RUN cabal install highlighting-kate
+RUN cabal install aeson
+RUN cabal install syb
+
 RUN cabal install pandoc-types
 RUN cabal install pandoc
 RUN cabal install pandoc-citeproc
