@@ -6,15 +6,7 @@ RUN pacman -Sy &&\
 RUN pacman -S --quiet --noconfirm graphviz ttf-dejavu fontconfig
 
 RUN cabal update
-RUN cabal install tls
-RUN cabal install highlighting-kate
-RUN cabal install aeson
-RUN cabal install deepseq-generics
-
-RUN cabal install -v3 pandoc-types
-RUN cabal install pandoc
-RUN cabal install pandoc-citeproc
-RUN cabal install pandoc-crossref
+RUN cabal install -v3 pandoc pandoc-citeproc pandoc-crossref
 
 CMD ["/bin/bash"]
 
